@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager Dashboard</title>
+<link rel="stylesheet" href="manager-dashboard.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+    <h2 class="logo">Wed Sphere</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hall listing.html">Halls</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="user-menu">
+    <span class="user-icon">👤</span>
+    <div class="dropdown">
+      <a href= "login.html">Sign in</a>
+      <a href="register.html">Hall Manager Login</a>
+    </div>
+    </div>
+    <button onclick="logoutUser()">Logout</button>
+    </nav>
+</header>
+<!-- TITLE -->
+<h1 class="title">Manager Dashboard</h1>
+
+<!-- ADD NEW HALL -->
+<div class="add-btn">
+    <button onclick="goToRegister()">+ Add New Hall</button>
+</div>
+
+<!-- MY HALLS -->
+<h2>My Halls</h2>
+<div id="hallContainer" class="container"></div>
+
+<!-- BOOKINGS -->
+<h2>Bookings</h2>
+<div id="bookingContainer" class="container"></div>
+
+<script src="manager-dashboard.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

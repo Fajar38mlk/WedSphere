@@ -1,0 +1,209 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  height:100vh;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(142,68,173,0.7);
+  backdrop-filter:blur(10px);
+  color:white;
+}
+
+.navbar a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+}
+
+.navbar a:hover{
+    color: rgb(0, 234, 255);
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999; /* 🔥 IMPORTANT */
+}
+
+/* links */
+.dropdown a {
+    display: block;
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown a:hover {
+    background: #8e44ad;
+    color: white;
+}
+
+/* show */
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+
+/* TITLE */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+h2{
+  margin-left: 40px;
+}
+/* ADD BUTTON */
+.add-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-btn button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #8e44ad, #c39bd3);
+  color: white;
+  cursor: pointer;
+}
+.add-btn button:hover{
+  background: red;
+}
+
+/* GRID */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f3e9ff);
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(142,68,173,0.15);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg,#8e44ad,#ff9ff3,#8e44ad);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* 🔥 TITLE SPACING FIX */
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.card button {
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.edit {
+  background: linear-gradient(45deg,#3498db,#74b9ff);
+  color: white;
+}
+
+.delete {
+  background: linear-gradient(45deg,#ff6b6b,#ff4757);
+  color: white;
+}
+
+/* Approve Button */
+.approve {
+  background: linear-gradient(45deg,#2ecc71,#27ae60);
+}
+
+/* Reject Button */
+.reject {
+  background: linear-gradient(45deg,#ff6b6b,#e74c3c);
+}
+
+/* Hover effect */
+.edit:hover,
+.delete:hover,
+.approve:hover,
+.reject:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card button:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 STATUS FIX (ONLY spacing added) */
+.pending {
+  background: linear-gradient(45deg,#f39c12,#f1c40f);
+}
+
+.approved {
+  background: linear-gradient(45deg,#2ecc71,#27ae60);
+}
+
+.rejected {
+  background: linear-gradient(45deg,#e74c3c,#ff6b6b);
+}
+
+/* COLORS */
+.pending {
+  background: orange;
+}
+
+.confirmed {
+  background: green;
+}

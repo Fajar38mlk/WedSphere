@@ -1,0 +1,162 @@
+/* Body Background */
+header {
+    background:  #8e44ad;
+    color: white;
+    padding: 2px 3px ; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    box-sizing: border-box; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
+}
+.title{
+    font-size: 18px;
+}
+body {
+    margin: 0 15px;
+    padding-top: 60px; 
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: rgb(0, 234, 255);
+}
+
+.user-icon {
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.user-icon:hover {
+    transform: scale(1.2);
+}
+
+.logo img{
+    width: 70px;
+    height: 60px;
+}
+
+ul {
+  list-style: none;  /* yellow bullet remove */
+  padding: 0;
+  display: flex;     /* horizontal menu banane ke liye */
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* SIDE MENU */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #8e44ad;;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+/* Links */
+.side-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-menu a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+}
+
+/* Main Container */
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Image */
+.details-container img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Details Box */
+.details {
+    max-width: 400px;
+    background: linear-gradient(135deg, #e0c3fc, #f9d1ff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Text Styling */
+.details h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Menu List */
+.details ul {
+    padding-left: 20px;
+}
+
+.details ul li {
+    margin-bottom: 5px;
+}
+
+/* Button */
+button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff3b2e;
+}
+
+

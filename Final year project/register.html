@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Hall</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>Wed Sphere</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="hall listing.html">Halls</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="user-menu">
+    <span class="user-icon">👤</span>
+    <div class="dropdown">
+      <a href= "login.html">Sign in</a>
+      <a href="register.html">Hall Manager Login</a>
+    </div>
+    </div>
+  </nav>
+</header>
+
+<!-- TITLE -->
+<h1 class="title">Register Your Hall</h1>
+
+<!-- FORM -->
+<div class="form-container">
+
+    <input type="text" id="managerName" placeholder="Manager Name">
+    <input type="text" id="hallName" placeholder="Hall Name">
+    <input type="text" id="location" placeholder="Location">
+    <input type="number" id="capacity" placeholder="Capacity (Guests)">
+    <input type="number" id="price" placeholder="Price (PKR)">
+
+    
+    <button onclick="addHall()">Next</button>
+
+</div>
+
+<script src="register.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

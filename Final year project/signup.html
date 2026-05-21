@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Signup - Wed Sphere</title>
+
+<link rel="stylesheet" href="login.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR (same as login) -->
+<header class="navbar">
+    <h2>Wed Sphere</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hall-listing.html">Halls</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="user-menu">
+    <span class="user-icon">👤</span>
+    <div class="dropdown">
+      <a href= "login.html">Sign in</a>
+      <a href="register.html">Hall Manager Login</a>
+    </div>
+    </div>
+    </nav>
+</header>
+
+<!-- SIGNUP FORM -->
+<div class="form-container">
+
+    <h2>Signup</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="email" id="signupEmail" placeholder="Enter Email">
+
+    <div class="password-container">
+        <input type="password" id="signupPassword" placeholder="Enter Password">
+        <span onclick="togglePassword()">👁️</span>
+    </div>
+
+    <button class="login-btn" onclick="signupUser()">Signup</button>
+
+    <p>
+        Already have an account? <a href="login.html">Login</a>
+    </p>
+
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hall Listing</title>
+
+<link rel="stylesheet" href="hall listing.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- SAME NAVBAR (reuse everywhere) -->
+<header class="navbar">
+    <h2 class="logo">Wed Sphere</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hall listing.html">Halls</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="user-menu">
+    <span class="user-icon">👤</span>
+    <div class="dropdown">
+      <a href= "login.html">Sign in</a>
+      <a href="register.html">Hall Manager Login</a>
+    </div>
+    </div>
+    </nav>
+</header>
+
+<!-- SEARCH -->
+<h3>Search Halls</h3>
+<div class="filters">
+
+    <input type="text" id="search" placeholder="Search hall" onkeyup="applyFilters()">
+
+    <select id="category" onchange="applyFilters()">
+        <option value="">All Categories</option>
+        <option value="luxury">Luxury</option>
+        <option value="budget">Budget</option>
+    </select>
+
+    <select id="price" onchange="applyFilters()">
+        <option value="">Any Price</option>
+        <option value="low">Below 100k</option>
+        <option value="high">Above 100k</option>
+    </select>
+
+    <input type="number" id="capacity" placeholder="Guests" onkeyup="applyFilters()">
+
+</div>
+
+<!-- <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search hall..." onkeyup="searchHalls()">
+</section> -->
+
+<!-- CARDS -->
+<section class="halls" id="hallContainer">
+
+    <div class="card" data-category="luxury" data-price="110000" data-capacity="300">
+        <img src="mughal.jpg">
+        <h3>Mughal Mehal Hotel</h3>
+        <p>Chan Da Qila</p>
+        <p class="price">Capacity: 300</p>
+        <a href="mughal.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card" data-category="budget" data-price="70000" data-capacity="400">
+        <img src="md palace.jpg">
+        <h3>MD Palace</h3>
+        <p>Main GT Road</p>
+        <p class="price">Capacity: 400</p>
+        <a href="md.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card" data-category="luxury" data-price="150000" data-capacity="350">
+        <img src="al paras.jpg">
+        <h3>A Paras Hall</h3>
+        <p>Kot Abdullah</p>
+        <p class="price">Capacity: 350</p>
+        <a href="A paras.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card" data-category="budget" data-price="90000" data-capacity="450">
+        <img src="shesh.jpg">
+        <h3>Shesh Mehal</h3>
+        <p>Industrial Area</p>
+        <p class="price">Capacity: 450</p>
+        <a href="shesh.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card" data-category="luxury" data-price="170000" data-capacity="700">
+        <img src="dream.jpg">
+        <h3>Dream Hall</h3>
+        <p>Bajwa Zone</p>
+        <p class="price">Capacity: 700</p>
+        <a href="dream.html" class="btn">View Details</a>
+    </div>
+
+    <div class="card" data-category="budget" data-price="80000" data-capacity="330">
+        <img src="zainab.jpg">
+        <h3>Zainab Palace</h3>
+        <p>Jinnah Road</p>
+        <p class="price">Capacity: 330</p>
+        <a href="zainab.jpg" class="btn">View Details</a>
+    </div>
+
+</section>
+
+<script src="hall listing.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A paras Markey</title>
+
+<link rel="stylesheet" href="mughal.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>Wed Sphere</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="hall listing.html">Halls</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+
+
+    <div class="user-menu">
+    <span class="user-icon">👤</span>
+    <div class="dropdown">
+      <a href= "login.html">Sign in</a>
+      <a href="register.html">Hall Manager Login</a>
+    </div>
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<section class="detail-page">
+
+  <!-- IMAGE -->
+  <div class="detail-img">
+    <img src="al paras.jpg">
+  </div>
+
+  <!-- DETAILS -->
+  <div class="detail-box">
+    <h2>A Paras Markey</h2>
+
+    <p><b>Price:</b> Rs 150,000</p>
+    <p><b>Capacity:</b> 400 Guests</p>
+    <p><b>Location:</b> Kot Abdullah</p>
+
+    <!-- TIME -->
+    <label>Time Slot</label>
+    <select>
+      <option>Morning</option>
+      <option>Evening</option>
+    </select>
+
+    <!-- EVENT -->
+    <label>Event</label>
+    <select>
+      <option>Wedding</option>
+      <option>Engagement</option>
+    </select>
+
+    <!-- MENU -->
+    <label>Menu</label>
+    <div class="check">
+      <label><input type="checkbox"> Shami kabab</label>
+      <label><input type="checkbox"> Chicken Karahi</label>
+      <label><input type="checkbox"> BBQ</label>
+    </div>
+
+    <!-- FACILITIES -->
+    <label>Facilities</label>
+    <div class="check">
+      <label><input type="checkbox"> AC</label>
+      <label><input type="checkbox"> Parking</label>
+      <label><input type="checkbox"> Decoration</label>
+    </div>
+
+    <!-- MAP -->
+    <iframe src="https://maps.google.com/maps?q=gujranwala&output=embed"></iframe>
+
+    <button class="button" onclick="window.location.href='login.html'">Book Now</button>
+  </div>
+
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(135deg,#8e44ad,#c39bd3);
+  height:100vh;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(142,68,173,0.7);
+  backdrop-filter:blur(10px);
+  color:white;
+}
+
+.navbar a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+}
+
+.navbar a:hover{
+    color: rgb(0, 234, 255);
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999; /* 🔥 IMPORTANT */
+}
+
+/* links */
+.dropdown a {
+    display: block;
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown a:hover {
+    background: #8e44ad;
+    color: white;
+}
+
+/* show */
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+
+/* FORM BOX */
+#payment-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-top: 150px;
+  margin-left: 450px;
+}
+
+/* Stripe inputs */
+.stripe-input {
+  border: 1px solid #ccc;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+}
+
+/* ZIP input */
+#zip {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background: linear-gradient(45deg, #8e44ad, #3498db);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

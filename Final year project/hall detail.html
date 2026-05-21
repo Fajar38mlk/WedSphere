@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halls List</title>
+    <link rel="stylesheet" href="hall detail.css">
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+    </div>
+    <h1>Wed Sphere</h1>
+    <nav>
+        <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="hall listing.html">Hall Listing</a></li>
+       <li><a href="hall detail.html">Hall Detail</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       <li><span class="user-icon" onclick="goToLogin()">👤</span></li>
+        </ul>
+        
+    </nav>
+</header>
+
+<!--<header>
+    <h1>Mughal Mehal Hotel</h1>
+    <a href="halls-list.html">Back</a>
+</header>-->
+
+<div class="details-container">
+    <img src="mughal.jpg" alt="Mughal Mehal Hotel">
+
+    <div class="details">
+        <h2>Mughal Mehal Hotel</h2>
+        <p><b>Pricing Type:</b> Per Head</p>
+        <p><b>Price:</b> Rs 2500 / person</p>
+        <p><b>Seats:</b> 300 guests</p>
+        <p><b>Location:</b> Chan Da Qila</p>
+        <p><b>Price:</b> 100,000 PKR</p>
+
+        <p><strong>Select Time Slot:</strong></p>
+        <select>
+        <option>12 PM - 4 PM (Evening)</option>
+        <option>7 PM - 10 PM (Night)</option>
+        </select>
+
+       <p><strong>Select Event:</strong></p>
+       <select>
+       <option>Wedding</option>
+       <option>Engagement</option>
+       </select>
+
+        <p><strong>Select Menu:</strong></p>
+        <label><input type="checkbox" name="menu" value="Chicken Biryani">Chicken Biryani</label><br>
+        <label><input type="checkbox" name="menu" value="Chicken Karahi"> Chicken Karahi</label><br>
+        <label><input type="checkbox" name="menu" value="Seekh Kabab"> Seekh Kabab</label><br>
+        <label><input type="checkbox" name="menu" value="Salad & Raita"> Salad & Raita</label> <br>
+        <label><input type="checkbox" name="menu" value="Cold Drinks"> Cold Drinks</label>
+        
+
+        <p><b>Facilities:</b> <br> 
+        <label><input type="checkbox" name="facilities" value="ac"> Air Conditioning</label><br>
+        <label><input type="checkbox" name="facilities" value="parking"> Parking</label><br>
+       <label><input type="checkbox" name="facilities" value="decoration"> Decoration</label><br>
+       <label><input type="checkbox" name="facilities" value="stage"> Stage</label>
+
+        <h3>Location Map</h3>
+
+      <iframe
+      src="https://www.google.com/maps?q=Mughal+Mehal+Hotel+Gujranwala&output=embed"
+      width="100%" 
+      height="200" 
+      style="border:0; border-radius:10px;" 
+      loading="lazy">
+     </iframe>
+
+        <button onclick="bookNow('Mughal Mehal Hotel')">Book Now</button>
+        
+    </div>
+</div>
+
+ <!-- 2nd hotel-->
+<div class="details-container">
+    <img src="md palace.jpg" alt="MD Palace">
+
+    <div class="details">
+        <h2>MD Palace</h2>
+        <p><b>Seats:</b> 400 guests</p>
+        <p><b>Location:</b> Near Sailkot Bypass,Near GT Road</p>
+        <p><b>Price:</b> 70,000 PKR</p>
+        <p><strong>Select Time Slot:</strong></p>
+        <select>
+        <option>12 PM - 4 PM (Evening)</option>
+        <option>7 PM - 10 PM (Night)</option>
+        </select>
+
+       <p><strong>Select Event:</strong></p>
+       <select>
+       <option>Wedding</option>
+       <option>Engagement</option>
+       </select>
+        
+       <p><strong>Select Menu:</strong></p>
+        <label><input type="checkbox" name="menu" value="Mutton Biryani">Mutton Biryani </label><br>
+        <label><input type="checkbox" name="menu" value="Chicken Handi">Chicken Handi</label><br>
+        <label><input type="checkbox" name="menu" value="BBQ Platte">BBQ Platte </label><br>
+        <label><input type="checkbox" name="menu" value="Russian Salad">Russian Salad </label> <br>
+        <label><input type="checkbox" name="menu" value="Ice Cream">Ice Cream </label>
+
+        <p><b>Facilities:</b> <br> 
+        <label><input type="checkbox" name="facilities" value="ac"> Air Conditioning</label><br>
+        <label><input type="checkbox" name="facilities" value="parking"> Parking</label><br>
+       <label><input type="checkbox" name="facilities" value="Bridal Room"> Bridal Room</label><br>
+       <label><input type="checkbox" name="facilities" value="stage"> Stage</label>
+        
+       <h3>Location Map</h3>
+
+      <iframe
+      src="https://www.google.com/maps?q=MD+Palace+Gujranwala&output=embed"
+      width="100%" 
+      height="200" 
+      style="border:0; border-radius:10px;" 
+      loading="lazy">
+     </iframe>
+
+        <button onclick="bookNow('MD Palace')">Book Now</button>
+        
+    </div>
+</div>
+
+<!--3rd hotel-->
+<div class="details-container">
+    <img src="al paras.jpg" alt="A Paras Markey">
+
+    <div class="details">
+        <h2>A Paras Markey </h2>
+        <p><b>Seats:</b> 350 guests</p>
+        <p><b>Location:</b> Kot Abdullah</p>
+        <p><b>Price:</b> 150,000 PKR</p>
+        <p><strong>Available Time Slots:</strong></p>
+        <p><strong>Select Time Slot:</strong></p>
+        <select>
+        <option>12 PM - 4 PM (Evening)</option>
+        <option>7 PM - 10 PM (Night)</option>
+        </select>
+
+       <p><strong>Select Event:</strong></p>
+       <select>
+       <option>Wedding</option>
+       <option>Engagement</option>
+       </select>
+
+
+        <p><strong>Select Menu:</strong></p>
+        <label><input type="checkbox" name="menu" value="Chicken Pulao">Chicken Pulao </label><br>
+        <label><input type="checkbox" name="menu" value="Chicken Karahi">Chicken Karahi</label><br>
+        <label><input type="checkbox" name="menu" value="Shami Kabab">Shami Kabab</label><br>
+        <label><input type="checkbox" name="menu" value="Salad">Salad </label> <br>
+        <label><input type="checkbox" name="menu" value="Kheer">Kheer</label>
+
+        <p><b>Facilities:</b> <br> 
+        <label><input type="checkbox" name="facilities" value="ac"> Air Conditioning</label><br>
+        <label><input type="checkbox" name="facilities" value="parking"> Parking</label><br>
+       <label><input type="checkbox" name="facilities" value="decoration"> Decoration</label><br>
+       <label><input type="checkbox" name="facilities" value="Sound System">Sound System</label>
+       
+        <h3>Location Map</h3>
+
+      <iframe
+      src="https://www.google.com/maps?q=A+Paras+Marquee+Gujranwala&output=embed"
+      width="100%" 
+      height="200" 
+      style="border:0; border-radius:10px;" 
+      loading="lazy">
+     </iframe>
+
+        <button onclick="bookNow('A Paras Markey')">Book Now</button>
+    </div>
+</div>
+
+
+<!--4th hotel-->
+<div class="details-container">
+    <img src="shesh.jpg" alt="Shesh Mehal">
+
+    <div class="details">
+        <h2>Shesh Mehal</h2>
+        <p><b>Seats:</b> 450 guests</p>
+        <p><b>Location:</b> Industrial Estate, Gujranwala</p>
+        <p><b>Price:</b> 90,000 PKR</p>
+        <p><strong>Select Time Slot:</strong></p>
+        <select>
+        <option>12 PM - 4 PM (Evening)</option>
+        <option>7 PM - 10 PM (Night)</option>
+        </select>
+
+       <p><strong>Select Event:</strong></p>
+       <select>
+       <option>Wedding</option>
+       <option>Engagement</option>
+       </select>
+
+       <p><strong>Select Menu:</strong></p>
+        <label><input type="checkbox" name="menu" value="Mutton  Qorma">Mutton Qorma </label><br>
+        <label><input type="checkbox" name="menu" value="Chicken Handi">Chicken Handi</label><br>
+        <label><input type="checkbox" name="menu" value="Shami Kabab">Shami Kabab</label><br>
+        <label><input type="checkbox" name="menu" value="Russian Salad">Russian Salad </label> <br>
+        <label><input type="checkbox" name="menu" value="Kheer">Kheer</label>
+
+        <p><b>Facilities:</b> <br> 
+        <label><input type="checkbox" name="facilities" value="ac"> Air Conditioning</label><br>
+        <label><input type="checkbox" name="facilities" value="parking"> Parking</label><br>
+       <label><input type="checkbox" name="facilities" value="decoration"> Decoration</label><br>
+       <label><input type="checkbox" name="facilities" value="stage"> Stage</label>
+
+       <h3>Location Map</h3>
+      <iframe
+      src="https://www.google.com/maps?q=Shesh+Mahal+Hotel+Gujranwala&output=embed"
+      width="100%" 
+      height="200" 
+      style="border:0; border-radius:10px;" 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+     </iframe>
+
+        <button onclick="bookNow('Shesh Mehal')">Book Now</button>
+        
+    </div>
+</div>
+
+<!--5th hotel-->
+<div class="details-container">
+    <img src="dream.jpg" alt="Dream Markey">
+
+    <div class="details">
+        <h2>Dream Markey</h2>
+        <p><b>Pricing Type:</b> Per Head</p>
+        <p><b>Price:</b> Rs 2500 / person</p>
+        <p><b>Seats:</b> 700 guests</p>
+        <p><b>Location:</b> Bajwa Industrial Zone, Gujranwala</p>
+        <p><b>Price:</b> 170,000 PKR</p>
+        <p><strong>Select Time Slot:</strong></p>
+        <select>
+        <option>12 PM - 4 PM (Evening)</option>
+        <option>7 PM - 10 PM (Night)</option>
+        </select>
+
+       <p><strong>Select Event:</strong></p>
+       <select>
+       <option>Wedding</option>
+       <option>Engagement</option>
+       </select>
+
+
+        <p><strong>Select Menu:</strong></p>
+        <label><input type="checkbox" name="menu" value="Mutton  Biryani">Mutton Biryani </label><br>
+        <label><input type="checkbox" name="menu" value="Chicken BBQ(Tikka+Kabab)">Chicken BBQ(Tikka+Kabab)</label><br>
+        <label><input type="checkbox" name="menu" value="Fish Fry">Fish Fry</label><br>
+        <label><input type="checkbox" name="menu" value="Soft Drinks">Soft Drinks </label> <br>
+        <label><input type="checkbox" name="menu" value="Desser(Gulab Jamun/Ice Cream)">Dessert(Gulab Jamun/Ice Cream)</label>
+
+        <p><b>Facilities:</b> <br> 
+        <label><input type="checkbox" name="facilities" value="ac"> Air Conditioning</label><br>
+        <label><input type="checkbox" name="facilities" value="LED Lighting System"> LED Lighting System</label><br>
+       <label><input type="checkbox" name="facilities" value="Premium Stage Decoration">Premium Stage Decoration</label><br>
+       <label><input type="checkbox" name="facilities" value="DJ & Sound System"> DJ & Sound System</label>
+
+       <h3>Location Map</h3>
+      <iframe
+      src="https://www.google.com/maps?q=Dream+Marquee+Gujranwala&output=embed"
+
+      width="100%" 
+      height="200" 
+      style="border:0; border-radius:10px;" 
+      loading="lazy">
+     </iframe>
+
+        <button onclick="bookNow('Dream Markey')">Book Now</button>
+        
+    </div>
+</div>
+
+
+</body>
+<script src="hall detail.js"></script>
+<script src="main.js"></script>
+</html>
